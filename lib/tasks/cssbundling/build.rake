@@ -30,7 +30,7 @@ module Cssbundling
 
     def install_command
       case
-      when using_tool?(:bun) then "bun install"
+      when using_tool?(:bun) then "bun run install"
       when using_tool?(:yarn) then "yarn install"
       when using_tool?(:pnpm) then "pnpm install"
       when using_tool?(:npm) then "npm install"
